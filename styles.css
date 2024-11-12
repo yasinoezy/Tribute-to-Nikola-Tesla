@@ -1,0 +1,90 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #f0f0f5;
+}
+
+#main {
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 800px;
+    width: 90%; /* Ensures the page is responsive */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#img-div {
+    margin: 20px 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-bottom: 5px solid #2a5298;
+    transition: transform 0.3s ease-in-out;
+}
+
+#image:hover {
+    transform: scale(1.05);
+}
+
+#img-caption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#tribute-info {
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #444;
+}
+
+#tribute-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#tribute-link:hover {
+    border-bottom: 2px solid #3498db;
+    text-shadow: 0 0 5px rgba(52, 152, 219, 0.6);
+}
+
+footer {
+    text-align: center; /* Centers the link at the bottom */
+}
